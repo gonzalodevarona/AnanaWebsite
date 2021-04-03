@@ -135,7 +135,7 @@ html { /** box sizing snippet paul irish**/
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 3rem 0 1rem 11rem;
+    margin: 3rem 0 1rem 15rem;
 
   }
 
@@ -154,7 +154,7 @@ html { /** box sizing snippet paul irish**/
     }
   }
   .header-phone svg{
-    margin-left: 7rem;
+    margin-left: 10rem;
   }
 
   @media (min-width: 768px) {

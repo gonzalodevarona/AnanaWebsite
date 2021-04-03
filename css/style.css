@@ -136,7 +136,7 @@ html { /** box sizing snippet paul irish**/
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 3rem 0 1rem 15rem;
+    margin: 1rem 0 1rem 15rem;
 
   }
 
@@ -604,13 +604,14 @@ footer span{
   position: fixed;
   bottom: 12%;
   right: 5%; 
-  gap: 1rem;
+  
 }
 
 .fixed-icons a{
   
   width: 5rem;
   height: 5rem;
+  padding-bottom: 6rem;
   
    
 }
@@ -620,6 +621,7 @@ footer span{
   
     width: 7rem;
     height: 7rem;
+    padding-bottom: 8rem
      
   }
   

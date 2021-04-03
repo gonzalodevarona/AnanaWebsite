@@ -598,13 +598,31 @@ footer span{
   text-transform: capitalize;
 }
 
-
-#whatsapp-icon {
+.fixed-icons{
+  display: flex;
+  flex-direction: column;
   position: fixed;
-  width: 7rem;
-  height: 7rem;
   bottom: 12%;
   right: 5%; 
+  gap: 1rem;
+}
+
+.fixed-icons a{
+  
+  width: 5rem;
+  height: 5rem;
+  
+   
+}
+
+@media (min-width: 768px) {
+  .fixed-icons a{
+  
+    width: 7rem;
+    height: 7rem;
+     
+  }
+  
 }
 
 

@@ -111,6 +111,9 @@ html { /** box sizing snippet paul irish**/
     }
   }
 
+
+
+  
   /********** LANDING **********/
 
   /** HEADER **/
@@ -180,7 +183,7 @@ html { /** box sizing snippet paul irish**/
 
   @media (min-width: 1824px) {
     .header-phone a.logo-pc img{
-      margin-left: 50rem;
+      margin-left: 30rem;
     }
   }
 
@@ -188,36 +191,52 @@ html { /** box sizing snippet paul irish**/
 
   /** NAVEGACION **/
 
+
+
+
   .navegacion-principal a{ 
     font-family: 'Roboto', sans-serif;
     text-transform: lowercase;
     color: var(--secundarioClaro);
     font-weight: normal;
 
-    padding: 0 2%;
+    padding: 1rem 2%;
     
 
   }
 
 
   .navegacion-principal{
-    display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    max-height: 0; /** esto oculta el contenedor de la barra para hacer un menú hamburgesa**/
+    overflow: hidden;  /** esto oculta los elementos de la barra para hacer un menú hamburgesa**/
+    transition: .5s;
+
+    
  
 
   }
-  .navegacion-principal {
-    margin: 0;
  
 
+  #nav:target {
+    max-height: 800px;
   }
+
   
   
   @media (min-width: 768px) {
  
     .navegacion-principal{
-      display: flex;
+      max-height: unset;
+      width: 100%;
+      flex-direction: row;
       flex-wrap: nowrap;
-      margin-right: 10%;
+      margin: 0;
+      padding-left: 30%;
+      
     }
 
     
@@ -225,8 +244,8 @@ html { /** box sizing snippet paul irish**/
 
   @media (min-width:  1824px) {
     .navegacion-principal{
+      margin-right: 10%;
       
-      margin-right: 50rem;
     }
   }
   
@@ -416,6 +435,8 @@ html { /** box sizing snippet paul irish**/
   text-align: center;
 }
 
+
+
 .question{
   color: var(--secundarioClaro);
   max-width: 100%;
@@ -423,6 +444,11 @@ html { /** box sizing snippet paul irish**/
   border-radius: 2rem;
   border-color: var(--primarioClaro);
   margin: 1rem 0;
+}
+
+.question:hover{
+  background-color: var(--primarioClaro);
+  color: black;
 }
 
 .answer{
@@ -565,6 +591,10 @@ footer p{
   font-size: 1.6rem;
   padding-bottom: 2rem;
   
+}
+footer span{
+  color: var(--secundarioClaro);
+  text-transform: capitalize;
 }
 
 

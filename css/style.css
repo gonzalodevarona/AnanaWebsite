@@ -1,0 +1,588 @@
+:root{ /* está linea se usa para definir variables propias del stylesheet*/
+    --primario : #355860;
+    --primarioClaro : #A2BFC3;
+    --secundario : #CFA687;
+    --secundarioClaro : #F3E4D9;
+    --parrafo : #4F4F4F;
+
+    --seravek:'Nunito Sans', sans-serif;
+    --elmono:'Roboto', sans-serif;
+    
+}
+
+/* GLOBALES */
+
+html { /** box sizing snippet paul irish**/
+    box-sizing: border-box;
+    
+    font-size: 62.5% ;
+
+    margin: 0;
+
+  }
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  body{
+      background-color: var(--primario);
+      font-size: 1.6rem;
+      line-height: 1.5; /* (el line height no tiene unidades) */
+
+  }
+
+  p{
+      font-family: var(--seravek);
+      font-size: 1.8rem;
+      color: var(--parrafo);
+      
+
+  }
+
+  ul{
+    font-family: var(--seravek);
+    font-size: 1.8rem;
+    color: var(--parrafo);
+  }
+
+  a{
+      text-decoration: none;
+  }
+
+  img{
+      margin: 0 auto;
+      max-width: 100%;
+      
+  }
+
+  .contenedor{
+      max-width: 90%;
+      margin: 0 auto;
+  }
+
+  @media (min-width: 768px) {
+    .contenedor{
+      max-width: 120rem;
+      
+    }  
+  }
+
+  h1, h2, h3 {
+      text-align: center;
+      color: var(--secundario);
+      font-family: var(--elmono);
+      font-weight: 300;
+  }
+
+  h1{
+      
+      font-size: 4rem;
+      display: none;
+  }
+
+  h2{
+    font-size: 3.2rem;
+  }
+
+  @media (min-width: 768px) {
+    h2{
+      font-size: 4rem;
+    }
+  }
+
+  h3{
+    font-size: 2.8rem;
+  }
+
+  @media (min-width: 768px) {
+    h3{
+      font-size: 3.2rem;
+    }
+  }
+
+  p{
+    font-size: 2.1rem;
+  }
+
+  @media (min-width: 768px) {
+    p{
+      font-size: 2.1rem;
+    }
+  }
+
+  /********** LANDING **********/
+
+  /** HEADER **/
+
+
+  @media (min-width: 768px) {
+    .contenedor-header{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 1rem 0;
+    }
+  }
+
+
+  /** LOGO **/
+
+  .header-phone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0 1rem 11rem;
+
+  }
+
+
+  .header-phone a#logo-phone img{
+    
+    width: 7rem;
+    max-width: 7rem;
+    max-height: 7rem;
+
+  }
+
+  @media (min-width: 768px) {
+    .header-phone a#logo-phone img{
+      display: none;
+    }
+  }
+  .header-phone svg{
+    margin-left: 7rem;
+  }
+
+  @media (min-width: 768px) {
+    .header-phone svg{
+      display: none;
+    }
+  }
+
+  .header-phone a.logo-pc img{
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    .header-phone a.logo-pc img{
+      display: block;
+    }
+
+     a.logo-pc {
+      
+      max-width: 20rem;
+      max-height: 20rem;
+      display: block;
+      
+    }
+  }
+
+  @media (min-width: 1824px) {
+    .header-phone a.logo-pc img{
+      margin-left: 50rem;
+    }
+  }
+
+  
+
+  /** NAVEGACION **/
+
+  .navegacion-principal a{ 
+    font-family: 'Roboto', sans-serif;
+    text-transform: lowercase;
+    color: var(--secundarioClaro);
+    font-weight: normal;
+
+    padding: 0 2%;
+    
+
+  }
+
+
+  .navegacion-principal{
+    display: none;
+ 
+
+  }
+  .navegacion-principal {
+    margin: 0;
+ 
+
+  }
+  
+  
+  @media (min-width: 768px) {
+ 
+    .navegacion-principal{
+      display: flex;
+      flex-wrap: nowrap;
+      margin-right: 10%;
+    }
+
+    
+  }
+
+  @media (min-width:  1824px) {
+    .navegacion-principal{
+      
+      margin-right: 50rem;
+    }
+  }
+  
+
+ /** IMAGEN PRINCIPAL **/
+
+  .main-picture #pc {
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    .main-picture{
+      
+      position: relative;
+      
+      text-align: center;
+      padding-bottom: 10rem;
+      
+      
+    }
+
+    .main-picture #pc {
+      display: block;
+      border-radius: 4.3rem;  
+      
+      
+    }
+
+
+    .main-picture #phone {
+      display: none;
+    }
+  }
+
+
+  .main-picture img {
+    display: block;
+    width: 100%;
+    max-width: 184rem;
+    height: auto;
+    object-fit: cover;
+  }
+
+  @media (min-width: 768px) {
+    .main-picture img {
+      width: 95%;
+    }
+  }
+
+  
+
+  /** SLOGAN **/
+
+  .slogan{
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    .slogan{
+      display: block;
+      font-family: 'Montserrat';
+      text-transform: capitalize;
+      text-align: center;
+      color: var(--secundarioClaro);
+      font-size: 4.8rem;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      font-weight: 100;
+  
+      position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+  
+    .slogan span{
+      text-transform:uppercase;
+      letter-spacing: 1rem;
+    }
+  }
+
+  .logo-text{
+    max-width: 80%;
+    max-height: 80%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 1rem;
+  }
+  
+  @media (min-width: 768px) {
+    .logo-text{
+      display: none;
+    }  
+  }
+ 
+/********** NOSOTROS **********/
+
+.nosotros{
+  background-color: var(--secundarioClaro);
+}
+
+.titulo-nosotros{
+  display: none;
+  color: var(--primario);
+}
+
+@media (min-width: 768px) {
+  .titulo-nosotros{
+    display: block;
+    margin: 0;
+  }
+}
+
+
+
+.contenido-nosotros img{
+  padding-right: 2rem;
+}
+
+@media (min-width: 768px) {
+  .contenido-nosotros img{
+    padding-right: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .separacion-izquierda{
+    display: flex;
+    justify-content: space-evenly;
+    align-items:flex-end;
+    gap: 3rem;
+    margin-right: 5rem;
+    
+  }
+
+}
+
+/** ICONOS **/
+
+.titulo-iconos{
+  margin: 6rem 0 4rem 0;
+}
+
+.icono{
+  display: block;
+  margin: 0 0;
+  margin: 5rem auto 0 auto;
+  text-align: center;
+}
+
+.icono:last-of-type{
+  padding-bottom: 5rem;
+}
+
+.icono p{
+  
+   max-width: 39rem;
+   margin: 0 0;
+   margin: 0 auto;
+  
+}
+.icono span{
+  color: var(--primario);
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .iconos-nosotros{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .icono{
+    
+    margin: 0;
+    padding: 0;
+
+  }
+  
+}
+
+
+/********** PREGUNTAS **********/
+
+.full-question{
+  text-align: center;
+}
+
+.question{
+  color: var(--secundarioClaro);
+  max-width: 100%;
+  border-style:solid;
+  border-radius: 2rem;
+  border-color: var(--primarioClaro);
+  margin: 1rem 0;
+}
+
+.answer{
+  display: none;
+}
+
+
+.questions{
+  margin-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+  .questions{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+  }
+}
+
+
+
+
+/********** BENEFICIOS **********/
+
+
+.beneficios{
+  background-color: var(--secundarioClaro);
+  padding-bottom: 5rem;
+}
+
+.beneficios img{
+  display: block;
+  margin: 0 auto;
+
+  width: 100%;
+}
+
+.titulo-prinicipal-beneficio{
+  color: var(--primario);
+}
+
+.titulo-beneficio{
+  color: var(--primario);
+  margin-bottom: 0;
+  text-align: left;
+  
+}
+
+.texto-beneficio{
+  
+  margin-top: 0;
+  
+}
+
+.texto-beneficio p{
+  
+  margin-top: 0;
+  
+}
+
+
+/********** FOOTER **********/
+
+.footer-display{
+  display: grid;
+  grid: 1fr;
+}
+
+@media (min-width: 768px) {
+  .footer-display{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 3.1rem;
+    gap: 10rem;
+  }
+}
+
+
+
+
+footer .footer-display p{
+  padding: 5rem 0 0 0;
+  color: var(--primarioClaro);
+}
+
+@media (min-width: 768px) {
+  footer .footer-display p{
+    padding: 0;
+  }
+}
+
+
+
+.footer-display a.logo-pc{
+  max-width: 30rem;
+  max-height: 30rem;
+  margin: 0 auto;
+  grid-row: 3 / 4;
+}
+
+@media (min-width: 768px) {
+  .footer-display a.logo-pc{
+    margin: 0;
+  }
+}
+
+.social-footer{
+  margin: 4rem auto;
+}
+
+@media (min-width: 768px) {
+  .social-footer{
+    margin: 0;
+  }
+}
+
+div.social-footer p{
+  color: var(--secundarioClaro);
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  div.social-footer p{
+    display: none;
+  }
+}
+
+.icons-footer{
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  
+}
+
+footer p{
+  color: var(--secundario);
+  text-align: center;
+  margin: 0 ;
+  font-size: 1.6rem;
+  padding-bottom: 2rem;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+  
+

@@ -18,6 +18,7 @@ html { /** box sizing snippet paul irish**/
     font-size: 62.5% ;
 
     margin: 0;
+    
 
   }
 
@@ -115,6 +116,36 @@ html { /** box sizing snippet paul irish**/
 
   
   /********** LANDING **********/
+
+  /** FIXED BUTTONS **/
+  .fixed-icons{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 12%;
+    right: 5%; 
+    
+    
+  }
+  
+  .fixed-icons a{
+    
+    width: 5rem;
+    height: 5rem;
+    padding-bottom: 6rem;
+    
+     
+  }
+  
+  @media (min-width: 768px) {
+    .fixed-icons a{
+    
+      width: 7rem;
+      height: 7rem;
+      padding-bottom: 8rem
+       
+    }
+    
 
 
   /** HEADER **/
@@ -259,13 +290,10 @@ html { /** box sizing snippet paul irish**/
 
   @media (min-width: 768px) {
     .main-picture{
-      
-      position: relative;
-      
+
       text-align: center;
       padding-bottom: 10rem;
-      
-      
+ 
     }
 
     .main-picture #pc {
@@ -298,36 +326,7 @@ html { /** box sizing snippet paul irish**/
 
   
 
-  /** SLOGAN **/
-
-  .slogan{
-    display: none;
-  }
-
-  @media (min-width: 768px) {
-    .slogan{
-      display: block;
-      font-family: 'Montserrat';
-      text-transform: capitalize;
-      text-align: center;
-      color: var(--secundarioClaro);
-      font-size: 4.8rem;
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      font-weight: 100;
   
-      position: absolute;
-        top: 45%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-  
-    .slogan span{
-      text-transform:uppercase;
-      letter-spacing: 1rem;
-    }
-  }
 
   .logo-text{
     max-width: 80%;
@@ -598,33 +597,7 @@ footer span{
   text-transform: capitalize;
 }
 
-.fixed-icons{
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  bottom: 12%;
-  right: 5%; 
-  
-}
 
-.fixed-icons a{
-  
-  width: 5rem;
-  height: 5rem;
-  padding-bottom: 6rem;
-  
-   
-}
-
-@media (min-width: 768px) {
-  .fixed-icons a{
-  
-    width: 7rem;
-    height: 7rem;
-    padding-bottom: 8rem
-     
-  }
-  
 }
 
 

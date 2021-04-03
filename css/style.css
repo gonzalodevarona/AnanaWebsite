@@ -116,6 +116,7 @@ html { /** box sizing snippet paul irish**/
   
   /********** LANDING **********/
 
+
   /** HEADER **/
 
 
@@ -595,6 +596,15 @@ footer p{
 footer span{
   color: var(--secundarioClaro);
   text-transform: capitalize;
+}
+
+
+#whatsapp-icon {
+  position: fixed;
+  width: 7rem;
+  height: 7rem;
+  bottom: 12%;
+  right: 5%; 
 }
 
 

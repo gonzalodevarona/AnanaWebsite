@@ -14,6 +14,7 @@ function deployFullAnswer(fullQuestion, question, answer) {
     document.getElementById(fullQuestion).style.borderRadius = "20px";
     document.getElementById(fullQuestion).style.borderColor = "#A2BFC3";
     document.getElementById(fullQuestion).style.backgroundColor = "#A2BFC3";
+    document.getElementById(fullQuestion).style.marginBottom = "10px";
 
     
   }

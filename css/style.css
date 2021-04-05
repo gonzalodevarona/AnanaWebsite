@@ -145,7 +145,21 @@ p{
     padding-bottom: 8rem
      
   }
+<<<<<<< HEAD
 }
+=======
+  
+  @media (min-width: 768px) {
+    .fixed-icons a{
+    
+      width: 7rem;
+      height: 7rem;
+      padding-bottom: 8rem
+       
+    }
+  }
+
+>>>>>>> fcfa2cc1a2e19d7d7da80af7800de9d0157216e6
 
 /** HEADER **/
 
@@ -595,8 +609,32 @@ margin: 0 ;
 font-size: 1.6rem;
 padding-bottom: 2rem;
 
+<<<<<<< HEAD
 }
 footer span{
 color: var(--secundarioClaro);
 text-transform: capitalize;
 }
+=======
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+  
+
+>>>>>>> fcfa2cc1a2e19d7d7da80af7800de9d0157216e6

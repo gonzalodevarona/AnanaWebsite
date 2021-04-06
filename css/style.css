@@ -116,7 +116,7 @@ html { /** box sizing snippet paul irish**/
 
 
   
-  /********** LANDING **********/
+  /******************** LANDING ********************/
 
   /** FIXED BUTTONS **/
   .fixed-icons{
@@ -608,6 +608,73 @@ footer span{
 
 
 
+
+/******************** CONTACT ********************/
+
+.bg-second{
+  background-color: var(--secundario);
+}
+
+
+.p-contact{
+  color: var(--secundarioClaro);
+  margin: 0;
+  text-align: center;
+}
+
+.p-contact-nocenter{
+  color: var(--secundarioClaro);
+  margin: 0;
+}
+
+.titulo-contactanos{
+  color: var(--secundario);
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  font-family: var(--seravek);
+}
+
+@media (min-width: 768px) {
+  .titulo-contactanos{
+    letter-spacing: 3rem;
+    
+  }
+}
+
+
+.icono-contacto{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: start;
+  margin: 2rem 0;
+}
+
+@media (min-width: 768px) {
+  .contenido-contacto{
+    display: flex;
+    align-items:stretch;
+    gap: 10rem;
+  }
+    
+}
+
+.horario{
+  margin: 2rem 0 0 0;
+}
+
+
+.margin-bottom{
+  margin-bottom: 10rem;
+}
+
+.color-primario{
+  color: var(--primario);
+}
+
+.color-secundario-claro{
+  color: var(--secundarioClaro) !important;
+}
 
 
 

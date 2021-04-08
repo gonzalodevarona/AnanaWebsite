@@ -650,6 +650,13 @@ footer span{
   margin: 2rem 0;
 }
 
+#icono-map{
+  
+  justify-content: center;
+  gap: 0;
+  
+}
+
 @media (min-width: 768px) {
   .contenido-contacto{
     display: flex;
@@ -663,6 +670,9 @@ footer span{
   margin: 2rem 0 0 0;
 }
 
+.horario h3{
+  margin-top: 0;
+}
 
 .margin-bottom{
   margin-bottom: 10rem;
